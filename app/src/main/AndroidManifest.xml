@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testromanishin">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--<uses-feature android:name="android.hardware.type.watch" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic = "true" >
+
+
+<!--       <activity android:name=".Main2Activity"></activity> -->
+
+        <!--<uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
+
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+        <activity
+            android:name="com.example.romanishin.Main2Activity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.romanishin.activity_onMap"
+            android:label="@string/about_title" />
+        <activity
+            android:name="com.example.romanishin.cardsActivity"
+            android:label="@string/balls_title" />
+        <activity
+            android:name="com.example.romanishin.activity_service"
+            android:label="Техподдержка" />
+        <activity
+            android:name="com.example.romanishin.product_list"
+            android:label="Список продукции" />
+        <activity
+            android:name="com.example.romanishin.checksActivity"
+            android:label="Список чеков" />
+        <activity
+            android:name="com.example.romanishin.checksDetail"
+            android:label="Список продукции" />
+        <activity
+            android:name="com.example.romanishin.registrationForm"
+            android:label="Регистрация новой карты" />
+        <activity
+            android:name="com.example.romanishin.registrationCheckSMS"
+            android:label="Проверка кода из СМС" />
+        <activity
+            android:name="com.example.romanishin.activityStartBanners"
+            android:label="Проверка кода из СМС" />
+        <activity
+            android:name="com.example.romanishin.catalog"
+            android:label="Каталог продукции" />
+        <activity
+            android:name="com.example.romanishin.catalog_web"
+            android:label="Каталог продукции" />
+
+    </application>
+
+</manifest>

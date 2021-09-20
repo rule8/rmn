@@ -1,0 +1,2 @@
+include ':app', ':mapkit-3.5.0'
+rootProject.name='testRomanishin'
